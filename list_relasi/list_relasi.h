@@ -36,7 +36,7 @@ void insertFirst(list_relasi &L, address_relasi P);
 void insertLast(list_relasi &L, address_relasi P);
 void deleteFirst(list_relasi &L, address_relasi &P);
 void deleteLast(list_relasi &L, address_relasi &P);
-void deleteAfter(address_relasi Prec, address_relasi &P);
+void deleteAfter(list_relasi &L, address_relasi Prec, address_relasi &P);
 
 /**address_relasi alokasi( address_parent P, address_child C);**/
 void dealokasi(address_relasi &P);
