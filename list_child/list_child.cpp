@@ -105,20 +105,3 @@ void deleteAfter(List_child &L,address_child Prec, address_child &P){
 
 
 
-address_child findElm(List_child L, infotype_child x){
-    address_child P = first(L);
-    while (P != NULL){
-        if(info(P)== x){
-            return P;
-        }
-        P = next(P);
-    }
-    return NULL;
-}
-void printInfo(List_child L){
-    address_child P = first(L);
-    while (P != NULL){
-        cout<<info(P)<<endl;
-        P = next(P);
-    }
-}
