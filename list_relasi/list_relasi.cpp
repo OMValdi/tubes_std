@@ -26,23 +26,34 @@ void insertLast(list_relasi &L, address_relasi P){
 }
 
 void deleteFirst(list_relasi &L, address_relasi &P){
-    if (first(L)== NULL){
-        insertFirst(L,P);
-    }else{
+    if (first(L) != NULL){
         P = first(L);
         first(L) = next(P);
         next(P) = NULL;
     }
 }
 void deleteLast(list_relasi &L, address_relasi &P){
-    P = first(L);
-    while(next(next(P)) != NULL){
-        P = next(P);
+    address_relasi Q;
+    if( first(L) != NULL){
+        Q = first(L);
+        if(next(Q) == NULL){
+            deleteFirst(L,P);
+        }else{
+            P = first(L);
+        while(next(next(P)) != NULL){
+            P = next(P);
+        }
+        next(P) = NULL;
+        }
     }
-    next(P) = NULL;
+
 }
-void deleteAfter(address_relasi Prec, address_relasi &P){
+void deleteAfter(list_relasi &L, address_relasi Prec, address_relasi &P){
+    if ((first(L) != NULL) && (Prec != NULL)){
     P = next(Prec);
     next(Prec) = next(P);
     next(P) = NULL;
 }
+}
+
+
