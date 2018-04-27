@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1524564952 source:d:\tubes stf\invest_app\invest_app\childlist.cpp
+
+1524752936 source:d:\tubes stf\invest_app\invest_app\main.cpp
+	<iostream>
+	"parentList.h"
+
+1524564985 source:d:\tubes stf\invest_app\invest_app\relasilist.cpp
+
+1524829506 source:d:\tubes stf\invest_app\invest_app\parentlist.cpp
+	"parentList.h"
+
+1524752343 d:\tubes stf\invest_app\invest_app\parentlist.h
+	<iostream>
+	<string.h>
+	<fstream>
+	<cstdlib>
+	<iomanip>
+	"relasiList.h"
+
+1524579512 d:\tubes stf\invest_app\invest_app\relasilist.h
+	<iostream>
+
+1524843279 source:d:\dokumen dan tugas kuliah\c++\invest_app\main.cpp
+	<iostream>
+	"parentList.h"
+
+1524843104 d:\dokumen dan tugas kuliah\c++\invest_app\parentlist.h
+	"parentList.h"
+	"relasiList.h"
+	<iostream>
+
+1524840695 d:\dokumen dan tugas kuliah\c++\invest_app\relasilist.h
+	"relasiList.h"
+	"childList.h"
+	"parentList.h"
+	<iostream>
+
+1524837619 source:d:\dokumen dan tugas kuliah\c++\invest_app\parentlist.cpp
+	"parentList.h"
+
+1524840262 d:\dokumen dan tugas kuliah\c++\invest_app\childlist.h
+	<iostream>
+
+1524842785 source:d:\dokumen dan tugas kuliah\c++\invest_app\relasilist.cpp
+	"relasiList.h"
+
